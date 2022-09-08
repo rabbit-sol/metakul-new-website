@@ -12,7 +12,7 @@ const TeamMemberData = [
     { img: Ak, name: "Ankush Tamta", instaGram: "", linkedIn: "", id: 1 },
     { img: Ak, name: "Ankush Tamta", instaGram: "", linkedIn: "", id: 2 },
     { img: Ak, name: "Ankush Tamta", instaGram: "", linkedIn: "", id: 3 },
-    { img: Ak, name: "Ankush Tamta", instaGram: "", linkedIn: "", id: 4 },
+    
 ];
 
 export default function TeamMember() {
