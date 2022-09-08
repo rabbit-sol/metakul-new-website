@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+ 
+import React, { Fragment, useEffect, useMemo, useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import NavBar from "./comp/Navbar/navbar"
+import HeroSection from "./comp/HeroSection/HeroSection"
+import NftShowcase from "./comp/NftShowcase/NftShowcase"
+import NftCase from "./comp/NftCase/NftCase"
+import BlockChainCase from "./comp/BlockchainCase/BlockchainCase"
+import TeamMembers from "./comp/TeamMembers/TeamMembers"
+//import TeamMember from "./comp/TeamMember/TeamMember"
+import { Helmet } from "react-helmet";
+import JoinGang from "./comp/joinGang/joinGang";
+
+
+
+const App= () => {
+    return (
+        <div>
+            <Helmet>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;600;800&display=swap" rel="stylesheet" />
+            </Helmet>
+            <NavBar></NavBar>
+            <HeroSection></HeroSection>
+            <div className={"Container"}>
+            <JoinGang></JoinGang>
+            </div>
+            <NftShowcase></NftShowcase>
+            <NftCase></NftCase>
+            <BlockChainCase></BlockChainCase>
+            <TeamMembers></TeamMembers>
+            <div className={"MetakulContainer2"}>
+                <h4> 2022 &copy; Metakul. All rights reserved.</h4>
+
+
+            </div>
+
+            {/*<TeamMember></TeamMember>*/}
+
+        </div>
+    )
 }
 
 export default App;

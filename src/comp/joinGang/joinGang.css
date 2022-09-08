@@ -1,0 +1,45 @@
+
+.ButtonContiner {
+    margin: 20px;
+}
+
+.Icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.HeadingText {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    flex: none;
+    border: 0;
+    flex-grow: 0;
+}
+
+.FlexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Button {
+    background: linear-gradient(90.71deg, #73e0a9 0%, #5b68df 100%);
+    border-radius: 90px;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    color: #ffffff;
+    margin-right: 25px;
+}

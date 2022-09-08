@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\comp",
+    "\\src\\comp\\BlockchainCase",
+    "\\src\\comp\\HeroSection",
+    "\\src\\comp\\joinGang",
+    "\\src\\comp\\Navbar",
+    "\\src\\comp\\newsLetter",
+    "\\src\\comp\\NftShowcase",
+    "\\src\\comp\\qna"
+  ],
+  "SelectedNode": "\\src\\comp\\newsLetter",
+  "PreviewInSolutionExplorer": false
+}
