@@ -16,7 +16,7 @@ import Tiktok from "../../assets/followus/tiktok.png";
 
 export default function Footer() {
     return (
-        <div>
+       <div>
         <div className="Container1">
             <div className="ItemContainer">
                 <div className={"MetakulContainer"}>
@@ -46,28 +46,35 @@ export default function Footer() {
                         <div className={"MetaKulContent"}>Gas-Free Mark</div>
                         <div className={"MetaKulContent"}>Activity </div>
                     </div>
-                    <div className={"MetakulIconContainer"}>
-                        <MetaKulHeading1>Follow us on</MetaKulHeading1>
-                        <div className={"MetakulIcon"}>
-                            <div className={"FlexRow"} between>
-                                <img className={"Icon"} src={Telegram}></img>
-                                <img className={"Icon"} src={Twitter}></img>
-                                <img className={"Icon"} src={Youtube}></img>
-                            </div>
-                            <div className={"FlexRow"} between>
-                                <img className={"Icon"} src={Facebook}></img>
-                                <img className={"Icon"} src={Instagram}></img>
-                                <img className={"Icon"} src={Tiktok}></img>
-                            </div>
+                    
+                    </div>
+                <div className={"MetakulIconContainer"}>
+                    <MetaKulHeading1>Follow us on</MetaKulHeading1>
+                    <div className={"MetakulIcon"}>
+                        <div className={"FlexRow"} between>
+                            <img className={"Icon"} src={Telegram}></img>
+                            <img className={"Icon"} src={Twitter}></img>
+                            <img className={"Icon"} src={Youtube}></img>
+                        </div>
+                        <div className={"FlexRow"} between>
+                            <img className={"Icon"} src={Facebook}></img>
+                            <img className={"Icon"} src={Instagram}></img>
+                            <img className={"Icon"} src={Tiktok}></img>
                         </div>
                     </div>
                 </div>
                
             </div>
-           
+                
                
-            </div>
-            
+       
         </div>
+        <div className={"MetakulContainer2"}>
+                    <h4> 2022 &copy; Metakul. All rights reserved.</h4>
+
+
+                </div>
+                </div>
+
     );
 }

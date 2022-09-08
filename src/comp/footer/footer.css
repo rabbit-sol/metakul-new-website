@@ -6,10 +6,14 @@
 }
 
 .Container1 {
-    backdrop-filter: blur(4px);
-    width: 100%;
-    margin-bottom:20px;
-    margin-left:15px
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px
 }
 
 ItemContainer {

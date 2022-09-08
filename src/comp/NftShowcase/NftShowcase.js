@@ -14,18 +14,7 @@ const NftData = [
         url: Nft2,
         name: "NFT two",
     },
-    {
-        url: Nft3,
-        name: "NFT three",
-    },
-    {
-        url: Nft1,
-        name: "NFT one",
-    },
-    {
-        url: Nft2,
-        name: "NFT two",
-    },
+    
 ];
 
 export default function NftShowCase() {

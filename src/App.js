@@ -30,13 +30,6 @@ const App= () => {
             <NftCase></NftCase>
             <BlockChainCase></BlockChainCase>
             <TeamMembers></TeamMembers>
-            <div className={"MetakulContainer2"}>
-                <h4> 2022 &copy; Metakul. All rights reserved.</h4>
-
-
-            </div>
-
-            {/*<TeamMember></TeamMember>*/}
 
         </div>
     )

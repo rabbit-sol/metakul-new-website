@@ -6,120 +6,120 @@ import CloseIcon from "../../assets/svg/CloseIcon";
 import LogoIcon from "../../assets/svg/Logo";
 
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
-  return (
-    <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
-      <SidebarHeader className="flexSpaceCenter">
-        <div className="flexNullCenter">
-          <LogoIcon />
-          <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            Metakul
-          </h1>
-        </div>
-        <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
-          <CloseIcon />
-        </CloseBtn>
-      </SidebarHeader>
+    return (
+        <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
+            <SidebarHeader className="flexSpaceCenter">
+                <div className="flexNullCenter">
+                    <LogoIcon />
+                    <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
+                        Metakul
+                    </h1>
+                </div>
+                <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
+                    <CloseIcon />
+                </CloseBtn>
+            </SidebarHeader>
 
-      <UlStyle className="flexNullCenter flexColumn">
-        <li className="semiBold font20 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Home
-          </Link>
-        </li>
-        <li className="semiBold font20 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="services"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Services
-          </Link>
-        </li>
-        <li className="semiBold font20 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Projects
-          </Link>
-        </li>
-        <li className="semiBold font20 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="blog"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Blog
-          </Link>
-        </li>
-        <li className="semiBold font20 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="pricing"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Pricing
-          </Link>
-        </li>
-        <li className="semiBold font20 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Contact
-          </Link>
-        </li>
-      </UlStyle>
-      <UlStyle className="flexSpaceCenter">
-        <li className="semiBold font20 pointer">
-          <a href="/" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
-            Log in
-          </a>
-        </li>
-        <li className="semiBold font20 pointer flexCenter">
-          <a href="/" className="radius8 " style={{ padding: "10px 15px" }}>
-            Get Started
-          </a>
-        </li>
-      </UlStyle>
-    </Wrapper>
-  );
+            <UlStyle className="flexNullCenter flexColumn">
+                <li className="semiBold font20 pointer">
+                    <Link
+                        onClick={() => toggleSidebar(!sidebarOpen)}
+                        activeClass="active"
+                        className="whiteColor"
+                        style={{ padding: "10px 15px" }}
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        offset={-60}
+                    >
+                        Home
+                    </Link>
+                </li>
+                <li className="semiBold font20 pointer">
+                    <Link
+                        onClick={() => toggleSidebar(!sidebarOpen)}
+                        activeClass="active"
+                        className="whiteColor"
+                        style={{ padding: "10px 15px" }}
+                        to="services"
+                        spy={true}
+                        smooth={true}
+                        offset={-60}
+                    >
+                        Services
+                    </Link>
+                </li>
+                <li className="semiBold font20 pointer">
+                    <Link
+                        onClick={() => toggleSidebar(!sidebarOpen)}
+                        activeClass="active"
+                        className="whiteColor"
+                        style={{ padding: "10px 15px" }}
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={-60}
+                    >
+                        Projects
+                    </Link>
+                </li>
+                <li className="semiBold font20 pointer">
+                    <Link
+                        onClick={() => toggleSidebar(!sidebarOpen)}
+                        activeClass="active"
+                        className="whiteColor"
+                        style={{ padding: "10px 15px" }}
+                        to="blog"
+                        spy={true}
+                        smooth={true}
+                        offset={-60}
+                    >
+                        Blog
+                    </Link>
+                </li>
+                <li className="semiBold font20 pointer">
+                    <Link
+                        onClick={() => toggleSidebar(!sidebarOpen)}
+                        activeClass="active"
+                        className="whiteColor"
+                        style={{ padding: "10px 15px" }}
+                        to="pricing"
+                        spy={true}
+                        smooth={true}
+                        offset={-60}
+                    >
+                        Pricing
+                    </Link>
+                </li>
+                <li className="semiBold font20 pointer">
+                    <Link
+                        onClick={() => toggleSidebar(!sidebarOpen)}
+                        activeClass="active"
+                        className="whiteColor"
+                        style={{ padding: "10px 15px" }}
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-60}
+                    >
+                        Contact
+                    </Link>
+                </li>
+            </UlStyle>
+            <UlStyle className="flexSpaceCenter">
+                <li className="semiBold font20 pointer">
+                    <a href="/" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
+                        Log in
+                    </a>
+                </li>
+                <li className="semiBold font20 pointer flexCenter">
+                    <a href="/" className="radius8 " style={{ padding: "10px 15px" }}>
+                        Get Started
+                    </a>
+                </li>
+            </UlStyle>
+        </Wrapper>
+    );
 }
 
 const Wrapper = styled.nav`

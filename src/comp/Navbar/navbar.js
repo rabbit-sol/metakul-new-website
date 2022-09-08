@@ -22,7 +22,7 @@ export default function TopNavbar() {
 
     return (
         <>
-            <Sidebar  sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+            <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
             {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
             <Wrapper className="flexCenter animate " style={y > 100 ? { height: "60px" } : { height: "80px" }}>
                 <NavInner className="container flexSpaceCenter">
@@ -118,5 +118,4 @@ const UlWrapperRight = styled.ul`
     display: none;
   }
 `;
-
 

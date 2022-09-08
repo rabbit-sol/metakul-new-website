@@ -5,9 +5,9 @@ import LinkedIn from "../../assets/social/linkedin.png";
 
 export default function JoinGang() {
     return (
-        <div style={{margin:"0px 10px 20px 0px"}}>
-            <div className="FlexRow">
-                <div className="HeadingText"> Join The Metakull Gang</div>
+        <div style={{margin:"80px 20px 50px 20px"}}>
+            <div className="">
+                <div className="HeadingText"> Join The Metakul Gang</div>
             </div>
             <div className={"ButtonContiner"}>
                 <div className="FlexRow">
