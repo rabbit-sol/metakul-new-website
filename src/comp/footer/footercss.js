@@ -11,7 +11,7 @@ export const MetaKulHeading = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-font-size: 20px;
+font-size: 25px;
 
 `;
 export const MetaKulHeading1 = styled.div`
@@ -24,7 +24,7 @@ export const MetaKulHeading1 = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-font-size: 20px;
+font-size: 25px;
 
 
 `;

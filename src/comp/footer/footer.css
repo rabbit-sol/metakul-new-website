@@ -79,7 +79,7 @@ ItemContainer {
     padding-bottom:10px;
 }
 
-.Icon {
+.IconSocial {
     height: 40px;
     width: 40px;
     margin: 5px;
@@ -108,7 +108,7 @@ ItemContainer {
 
 
 @media only screen and (min-width: 1200px) {
-    .Icon {
+    .IconSocial {
         height: 60px;
         width: 60px;
         

@@ -52,14 +52,14 @@ export default function Footer() {
                     <MetaKulHeading1>Follow us on</MetaKulHeading1>
                     <div className={"MetakulIcon"}>
                         <div className={"FlexRow"} between>
-                            <img className={"Icon"} src={Telegram}></img>
-                            <img className={"Icon"} src={Twitter}></img>
-                            <img className={"Icon"} src={Youtube}></img>
+                                <img className={"IconSocial "} src={Telegram}></img>
+                                <img className={"IconSocial "} src={Twitter}></img>
+                                <img className={"IconSocial "} src={Youtube}></img>
                         </div>
                         <div className={"FlexRow"} between>
-                            <img className={"Icon"} src={Facebook}></img>
-                            <img className={"Icon"} src={Instagram}></img>
-                            <img className={"Icon"} src={Tiktok}></img>
+                                <img className={"IconSocial "} src={Facebook}></img>
+                                <img className={"IconSocial "} src={Instagram}></img>
+                                <img className={"IconSocial "} src={Tiktok}></img>
                         </div>
                     </div>
                 </div>

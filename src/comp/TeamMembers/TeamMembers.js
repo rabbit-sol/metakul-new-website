@@ -9,9 +9,9 @@ import LinedIn from "../../assets/icon/linkedIn.png";
 import NewsLetter from "../newsLetter/newsLetter";
 import Footer from "../footer/footer"
 const TeamMemberData = [
-    { img: Ak, name: "Ankush Tamta", instaGram: "", linkedIn: "", id: 1 },
-    { img: Ak, name: "Ankush Tamta", instaGram: "", linkedIn: "", id: 2 },
-    { img: Ak, name: "Ankush Tamta", instaGram: "", linkedIn: "", id: 3 },
+    { img: Ak, name: "Shubham Kunwar", instaGram: "", linkedIn: "", id: 1,role:"Blockchain developer" },
+    { img: Ak, name: "Narendra Rauthan", instaGram: "", linkedIn: "", id: 2, role: "" },
+    { img: Ak, name: "Ankush Tamta", instaGram: "", linkedIn: "", id: 3, role: ""},
     
 ];
 
@@ -29,6 +29,7 @@ export default function TeamMember() {
 
                                 <div className={"ContentContainer"}>
                                     <div className="CardText"> {member.name}</div>
+                                    <div className="cardInfo"> {member.role}</div>
                                     <div className="FlexRow" between>
                                         <div className={"IconContainer"}>
                                             <img className={"Icon"} src={Instagram}></img>
