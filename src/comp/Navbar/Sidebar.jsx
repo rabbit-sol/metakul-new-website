@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 // Assets
 import CloseIcon from "../../assets/svg/CloseIcon";
 import LogoIcon from "../../assets/svg/Logo";
@@ -27,43 +27,41 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        to="/"
+                        to="home"
                         spy={true}
                         smooth={true}
                         offset={-60}
                     >
                         Home
                     </Link>
-
                 </li>
-                
                 <li className="semiBold font20 pointer">
-                    <a
+                    <Link
                         onClick={() => toggleSidebar(!sidebarOpen)}
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        href="#roadmap"
+                        to="services"
                         spy={true}
                         smooth={true}
                         offset={-60}
                     >
-                        Roadmap
-                    </a>
+                        Services
+                    </Link>
                 </li>
                 <li className="semiBold font20 pointer">
-                    <a
+                    <Link
                         onClick={() => toggleSidebar(!sidebarOpen)}
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        href="#kul-team"
+                        to="projects"
                         spy={true}
                         smooth={true}
                         offset={-60}
                     >
-                        Team
-                    </a>
+                        Projects
+                    </Link>
                 </li>
                 <li className="semiBold font20 pointer">
                     <Link
@@ -79,20 +77,33 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
                         Blog
                     </Link>
                 </li>
-            
                 <li className="semiBold font20 pointer">
-                    <a
+                    <Link
                         onClick={() => toggleSidebar(!sidebarOpen)}
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        href="#contact"
+                        to="pricing"
+                        spy={true}
+                        smooth={true}
+                        offset={-60}
+                    >
+                        Pricing
+                    </Link>
+                </li>
+                <li className="semiBold font20 pointer">
+                    <Link
+                        onClick={() => toggleSidebar(!sidebarOpen)}
+                        activeClass="active"
+                        className="whiteColor"
+                        style={{ padding: "10px 15px" }}
+                        to="contact"
                         spy={true}
                         smooth={true}
                         offset={-60}
                     >
                         Contact
-                    </a>
+                    </Link>
                 </li>
             </UlStyle>
             <UlStyle className="flexSpaceCenter">

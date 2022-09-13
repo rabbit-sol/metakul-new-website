@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 // Components
 import Sidebar from "./Sidebar";
 import Backdrop from "../Elements/Backdrop";
@@ -8,7 +8,7 @@ import Backdrop from "../Elements/Backdrop";
 import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 
-const TopNavbar = () =>{
+export default function TopNavbar() {
     const [y, setY] = useState(window.scrollY);
     const [sidebarOpen, toggleSidebar] = useState(false);
 
@@ -26,7 +26,7 @@ const TopNavbar = () =>{
             {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
             <Wrapper className="flexCenter animate " style={y > 100 ? { height: "60px" } : { height: "80px" }}>
                 <NavInner className="container flexSpaceCenter">
-                    <Link className="pointer flexNullCenter" to="/" smooth={true}>
+                    <Link className="pointer flexNullCenter" to="home" smooth={true}>
                         <LogoIcon />
                         <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
                             Metakul
@@ -37,30 +37,34 @@ const TopNavbar = () =>{
                     </BurderWrapper>
                     <UlWrapper className="flexNullCenter">
                         <li className="semiBold font20 pointer">
-                            <Link activeClass="active" style={{ padding: "10px 15px" }} to="/" spy={true} smooth={true} offset={-80}>
+                            <Link activeClass="active" style={{ padding: "10px 15px" }} to="home" spy={true} smooth={true} offset={-80}>
                                 Home
                             </Link>
                         </li>
                         <li className="semiBold font20 pointer">
-                            <a activeClass="active" style={{ padding: "10px 15px" }} href="#roadmap" spy={true} smooth={true} offset={-80}>
-                                Roadmap
-                            </a>
+                            <Link activeClass="active" style={{ padding: "10px 15px" }} to="services" spy={true} smooth={true} offset={-80}>
+                                Services
+                            </Link>
                         </li>
                         <li className="semiBold font20 pointer">
-                            <a activeClass="active" style={{ padding: "10px 15px" }} href="#kul-team" spy={true} smooth={true} offset={-80}>
-                                Team
-                            </a>
+                            <Link activeClass="active" style={{ padding: "10px 15px" }} to="projects" spy={true} smooth={true} offset={-80}>
+                                Projects
+                            </Link>
                         </li>
                         <li className="semiBold font20 pointer">
                             <Link activeClass="active" style={{ padding: "10px 15px" }} to="blog" spy={true} smooth={true} offset={-80}>
                                 Blog
                             </Link>
                         </li>
-                      
                         <li className="semiBold font20 pointer">
-                            <a activeClass="active" style={{ padding: "10px 15px" }} href="#contact" spy={true} smooth={true} offset={-80}>
+                            <Link activeClass="active" style={{ padding: "10px 15px" }} to="pricing" spy={true} smooth={true} offset={-80}>
+                                Pricing
+                            </Link>
+                        </li>
+                        <li className="semiBold font20 pointer">
+                            <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
                                 Contact
-                            </a>
+                            </Link>
                         </li>
                     </UlWrapper>
                     <UlWrapperRight className="flexNullCenter">
@@ -70,8 +74,8 @@ const TopNavbar = () =>{
                             </a>
                         </li>
                         <li className="semiBold font20 pointer flexCenter">
-                            <a href="/" className="radius8 border border-rounded" style={{ padding: "10px 10px", background: "#0d545ff0" }}>
-                                Connect Wallet
+                            <a href="/" className="radius8 border border-rounded" style={{ padding: "10px 15px", background: "linear - gradient(90.71deg, #73e0a9 0 %, #5b68df 100 %);" }}>
+                                Get Started
                             </a>
                         </li>
                     </UlWrapperRight>
@@ -114,6 +118,3 @@ const UlWrapperRight = styled.ul`
     display: none;
   }
 `;
-
-export default TopNavbar;
-
