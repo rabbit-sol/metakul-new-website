@@ -32,7 +32,7 @@ export default function NftShowCase() {
             </div>
             <div className="MainQnaContainer" >
                 <Qna></Qna>
-                <iframe className={"mainVideo"} src="https://www.youtube.com/embed/uXWycyeTeCs"  ></iframe>
+                <iframe className={"mainVideo"} src="https://www.instagram.com/reel/CgDvAEpKa4Z/?igshid=YmMyMTA2M2Y="  ></iframe>
             </div>
         </div>
     );
