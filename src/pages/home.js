@@ -9,8 +9,8 @@ import TeamMembers from "../comp/TeamMembers/TeamMembers"
 const Home = () => {
     return (
         <div>
-            <HeroSection/>
-            <div className={"Container"} style={{ paddingTop:"50px"}}>
+            <HeroSection />
+            <div className={"Container"} style={{ paddingTop: "50px", paddingBottom:"150px" }}>
             <JoinGang></JoinGang>
             </div>
             <NftShowcase></NftShowcase>

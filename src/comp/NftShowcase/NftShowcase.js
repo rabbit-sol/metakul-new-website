@@ -28,9 +28,11 @@ export default function NftShowCase() {
                         {/*<div className="CardTittlecase">{nft.name}</div>*/}
                     </div>
                 ))}
+
             </div>
             <div className="MainQnaContainer" >
                 <Qna></Qna>
+                <iframe className={"mainVideo"} src="https://www.youtube.com/embed/uXWycyeTeCs"  ></iframe>
             </div>
         </div>
     );

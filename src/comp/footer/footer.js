@@ -60,17 +60,18 @@ export default function Footer() {
                     <MetaKulHeading1>Connect With Us</MetaKulHeading1>
                     <div className={"MetakulIcon"}>
                             <div className={"FlexRow"} between>
-                                <a activeClass="active" href="/#about" spy={true} smooth={true} offset={-80}>
+                                <a activeClass="active" href="https://www.instagram.com/metakul.nft/" spy={true} smooth={true} offset={-80}>
                                     <img className={"IconSocial "} src={Instagram}></img>
                                 </a>
                                 
-                                <a activeClass="active" href="/#about" spy={true} smooth={true} offset={-80}>
+                                <a activeClass="active" href="https://telegram.me/+OqiC3gNJDQ1hY2Rl" spy={true} smooth={true} offset={-80}>
                                     <img className={"IconSocial "} src={Telegram}></img>
                                 </a>
-                                <a activeClass="active"  href="/#about" spy={true} smooth={true} offset={-80}>
+                                <a activeClass="active" href="https://twitter.com/metakul_" spy={true} smooth={true} offset={-80}>
+                                
                                     <img className={"IconSocial "} src={Twitter}></img>
                                 </a>
-                                <a activeClass="active" href="/#about" spy={true} smooth={true} offset={-80}>
+                                    <a activeClass="active" href="https://discord.gg/sRk3tZ9z3A" spy={true} smooth={true} offset={-80}>
                                     <img className={"IconSocial "} src={Discord}></img>
                                 </a>
                                 
