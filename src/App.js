@@ -9,6 +9,7 @@ import Home from "./pages/home"
 import Mint from "./pages/mint"
 import NewsLetter from "./comp/newsLetter/newsLetter";
 import Footer from "./comp/footer/footer"
+import Roadmap from "./pages/roadmap";
 
 
 const App= () => {
@@ -25,7 +26,8 @@ const App= () => {
             <Routes>
 
                 <Route path="/" element={<Home />} />
-                <Route  path="/mint" element={<Mint />} />
+                <Route path="/mint" element={<Mint />} />
+                <Route path="/roadmap" element={<Roadmap />} />
                     
             </Routes>
 

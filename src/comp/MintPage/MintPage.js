@@ -168,12 +168,12 @@ const Mint = () => {
                        
                 <div className="featuredlaunch_clipboard">
                             <div className="featuredlaunch_box">
-                                <span>EARLY BIRD SUPPLY</span>
-                                <div className="featuredlaunch_quantity">400</div>
+                                <span>METAKUL SUPPLY</span>
+                        <div className="featuredlaunch_quantity">777 NFT<br/>7777 Metaverse Land</div>
                             </div>
                             <div className="featuredlaunch_box">
-                                <span>EARLY BIRD PRICE</span>
-                                <div className="featuredlaunch_quantity">Free</div>
+                                <span>WHITELIST SALE PRICE</span>
+                                <div className="featuredlaunch_quantity">3200INR (40USD)<br/>OR 200 $KULL</div>
                             </div>
                         </div>
                

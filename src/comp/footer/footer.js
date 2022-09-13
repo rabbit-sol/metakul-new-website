@@ -6,13 +6,13 @@ import {
     MetaKulHeading1
 
 } from "./footercss";
-
+import { Link } from "react-router-dom";
 import Telegram from "../../assets/followus/telegram.png";
 import Twitter from "../../assets/followus/twitter.png";
 import Youtube from "../../assets/followus/youtube.png";
 import Facebook from "../../assets/followus/facebook.png";
 import Instagram from "../../assets/followus/instagram.png";
-import Tiktok from "../../assets/followus/tiktok.png";
+import Discord from "../../assets/social/discord.png";
 
 export default function Footer() {
     return (
@@ -30,10 +30,18 @@ export default function Footer() {
                 <div className="MetakulConnectionContainer">
                     <div className={"ExtraHeadingContainer"}>
                         <MetaKulHeading>Company </MetaKulHeading>
-                        <div className={"MetaKulContent"}>About </div>
-                        <div className={"MetaKulContent"}>Careers </div>
-                        <div className={"MetaKulContent"}>Ventures</div>
-                        <div className={"MetaKulContent"}>Grants </div>
+                            <div className={"MetaKulContent"}>   <Link activeClass="active" style={{ padding: "10px 15px" }} to="/" spy={true} smooth={true} offset={-80}>
+                                Home
+                            </Link> </div>
+                            <div className={"MetaKulContent"}><a activeClass="active" style={{ padding: "10px 15px" }} href="/#about" spy={true} smooth={true} offset={-80}>
+                                About
+                            </a> </div>
+                            <div className={"MetaKulContent"}><a activeClass="active" style={{ padding: "10px 15px" }} href="/roadmap" spy={true} smooth={true} offset={-80}>
+                                Roadmap
+                            </a></div>
+                            <div className={"MetaKulContent"}><a activeClass="active" style={{ padding: "10px 15px" }} href="/#contact" spy={true} smooth={true} offset={-80}>
+                                Contact
+                            </a> </div>
                     </div>
                      <div className={"ExtraHeadingContainer"}>
                         <MetaKulHeading>Stats</MetaKulHeading>
@@ -49,12 +57,22 @@ export default function Footer() {
                     
                     </div>
                 <div className={"MetakulIconContainer"} id="contact">
-                    <MetaKulHeading1>Follow us on</MetaKulHeading1>
+                    <MetaKulHeading1>Connect With Us</MetaKulHeading1>
                     <div className={"MetakulIcon"}>
                             <div className={"FlexRow"} between>
-                                <img className={"IconSocial "} src={Instagram}></img>
-                                <img className={"IconSocial "} src={Telegram}></img>
-                                <img className={"IconSocial "} src={Twitter}></img>
+                                <a activeClass="active" href="/#about" spy={true} smooth={true} offset={-80}>
+                                    <img className={"IconSocial "} src={Instagram}></img>
+                                </a>
+                                
+                                <a activeClass="active" href="/#about" spy={true} smooth={true} offset={-80}>
+                                    <img className={"IconSocial "} src={Telegram}></img>
+                                </a>
+                                <a activeClass="active"  href="/#about" spy={true} smooth={true} offset={-80}>
+                                    <img className={"IconSocial "} src={Twitter}></img>
+                                </a>
+                                <a activeClass="active" href="/#about" spy={true} smooth={true} offset={-80}>
+                                    <img className={"IconSocial "} src={Discord}></img>
+                                </a>
                                 
                         </div>
                 

@@ -42,32 +42,32 @@ const TopNavbar = () =>{
                             </Link>
                         </li>
                         <li className="semiBold font20 pointer">
-                            <a activeClass="active" style={{ padding: "10px 15px" }} href="#about" spy={true} smooth={true} offset={-80}>
+                            <a activeClass="active" style={{ padding: "10px 15px" }} href="/#about" spy={true} smooth={true} offset={-80}>
                                 About
                             </a>
                         </li>
                         <li className="semiBold font20 pointer">
-                            <a activeClass="active" style={{ padding: "10px 15px" }} href="#roadmap" spy={true} smooth={true} offset={-80}>
+                            <a activeClass="active" style={{ padding: "10px 15px" }} href="/roadmap" spy={true} smooth={true} offset={-80}>
                                 Roadmap
                             </a>
                         </li>
                         <li className="semiBold font20 pointer">
-                            <a activeClass="active" style={{ padding: "10px 15px" }} href="#kul-team" spy={true} smooth={true} offset={-80}>
+                            <a activeClass="active" style={{ padding: "10px 15px" }} href="/#kul-team" spy={true} smooth={true} offset={-80}>
                                 Team
                             </a>
                         </li>
                        
                       
                         <li className="semiBold font20 pointer">
-                            <a activeClass="active" style={{ padding: "10px 15px" }} href="#contact" spy={true} smooth={true} offset={-80}>
+                            <a activeClass="active" style={{ padding: "10px 15px" }} href="/#contact" spy={true} smooth={true} offset={-80}>
                                 Contact
                             </a>
                         </li>
                     </UlWrapper>
                     <UlWrapperRight className="flexNullCenter">
                         <li className="semiBold font20 pointer">
-                            <a href="/" style={{ padding: "10px 30px 10px 0" }}>
-                                Log in
+                            <a href="/mint" style={{ padding: "10px 30px 10px 0" }}>
+                                Mint
                             </a>
                         </li>
                         <li className="semiBold font20 pointer flexCenter">

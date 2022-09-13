@@ -42,7 +42,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        href="#about"
+                        href="/#about"
                         spy={true}
                         smooth={true}
                         offset={-60}
@@ -57,7 +57,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        href="#roadmap"
+                        href="/roadmap"
                         spy={true}
                         smooth={true}
                         offset={-60}
@@ -71,7 +71,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        href="#kul-team"
+                        href="/#kul-team"
                         spy={true}
                         smooth={true}
                         offset={-60}
@@ -87,7 +87,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        href="#contact"
+                        href="/#contact"
                         spy={true}
                         smooth={true}
                         offset={-60}
@@ -98,8 +98,8 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             </UlStyle>
             <UlStyle className="flexSpaceCenter">
                 <li className="semiBold font20 pointer">
-                    <a href="/" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
-                        Log in
+                    <a href="/mint" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
+                       Mint
                     </a>
                 </li>
                 <li className="semiBold font20 pointer flexCenter">
