@@ -1,6 +1,8 @@
 
 .ButtonContiner {
     margin-bottom: 20px;
+    margin-left:25px;
+    
     
 }
 
@@ -12,7 +14,7 @@
 
 
 
-.FlexRow {
+.FlexRow1 {
     display: flex;
     flex-direction: row;
     align-items: center;

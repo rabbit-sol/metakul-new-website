@@ -48,7 +48,7 @@ export default function Footer() {
                     </div>
                     
                     </div>
-                <div className={"MetakulIconContainer"}>
+                <div className={"MetakulIconContainer"} id="contact">
                     <MetaKulHeading1>Follow us on</MetaKulHeading1>
                     <div className={"MetakulIcon"}>
                         <div className={"FlexRow"} between>

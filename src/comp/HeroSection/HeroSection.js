@@ -1,6 +1,6 @@
 
 
-
+import { Link } from "react-router-dom";
 import "./HeroSection.css"
 import staticData from "../../static";
 

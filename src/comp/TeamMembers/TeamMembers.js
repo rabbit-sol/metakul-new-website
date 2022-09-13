@@ -6,8 +6,7 @@ import Ak from "../../assets/teamMembers/ak.png";
 import Instagram from "../../assets/icon/instagram.png";
 import LinedIn from "../../assets/icon/linkedIn.png";
 
-import NewsLetter from "../newsLetter/newsLetter";
-import Footer from "../footer/footer"
+
 const TeamMemberData = [
     { img: Ak, name: "Shubham Kunwar", instaGram: "", linkedIn: "", id: 1,role:"Blockchain developer" },
     { img: Ak, name: "Narendra Rauthan", instaGram: "", linkedIn: "", id: 2, role: "" },
@@ -17,7 +16,7 @@ const TeamMemberData = [
 
 export default function TeamMember() {
     return (
-        <div className={"Container"}>
+        <div className={"Container"} id="kul-team">
             
             <div className={"HeadingText"}> Team Members </div>
             <div className={"FlexRow"}>
@@ -43,9 +42,7 @@ export default function TeamMember() {
                 </div>
             </div>
            
-            <NewsLetter></NewsLetter>
-            <Footer></Footer>
-          
+            
         </div>
     );
 }

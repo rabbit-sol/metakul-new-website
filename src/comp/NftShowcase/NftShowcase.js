@@ -14,6 +14,14 @@ const NftData = [
         url: Nft2,
         name: "NFT two",
     },
+    {
+        url: Nft3,
+        name: "NFT two",
+    },
+    {
+        url: Nft2,
+        name: "NFT two",
+    },
     
 ];
 
