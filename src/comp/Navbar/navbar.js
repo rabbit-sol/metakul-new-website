@@ -42,6 +42,11 @@ const TopNavbar = () =>{
                             </Link>
                         </li>
                         <li className="semiBold font20 pointer">
+                            <a activeClass="active" style={{ padding: "10px 15px" }} href="#about" spy={true} smooth={true} offset={-80}>
+                                About
+                            </a>
+                        </li>
+                        <li className="semiBold font20 pointer">
                             <a activeClass="active" style={{ padding: "10px 15px" }} href="#roadmap" spy={true} smooth={true} offset={-80}>
                                 Roadmap
                             </a>
@@ -51,11 +56,7 @@ const TopNavbar = () =>{
                                 Team
                             </a>
                         </li>
-                        <li className="semiBold font20 pointer">
-                            <Link activeClass="active" style={{ padding: "10px 15px" }} to="blog" spy={true} smooth={true} offset={-80}>
-                                Blog
-                            </Link>
-                        </li>
+                       
                       
                         <li className="semiBold font20 pointer">
                             <a activeClass="active" style={{ padding: "10px 15px" }} href="#contact" spy={true} smooth={true} offset={-80}>

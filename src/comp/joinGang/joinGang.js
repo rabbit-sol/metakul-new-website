@@ -6,19 +6,22 @@ import { Link } from "react-router-dom";
 
 export default function JoinGang() {
     return (
-        <div style={{margin:"20px auto 50px auto"}}>
+        <div >
             <div className="">
                 <div className="HeadingText"> Join The Metakul Gang</div>
             </div>
             <div className={"ButtonContiner"}>
                 <div className="FlexRow1">
-                    <button className="Button">
+                    <div className="Button" style={{marginRight:"20px"}}>
 
-                        <img className={"Icon"} src={Discord}></img><a style={{ color: "white" }} href="https://discord.com/invite/3MwNU73G7M"> Discord</a>
-                    </button>
+                        <img className={"Icon"} src={Discord}></img>
+                        <Link style={{ color: "white" }} to="https://discord.com/invite/3MwNU73G7M" activeStyle={{ fontWeight: "bold", }}>
+                            Discord
+                        </Link>
+                    </div>
                     <div className="Button">
-                        <img className={"Icon"} src={LinkedIn}></img>
-                        <Link className="" to="/mint" activeStyle={{ fontWeight: "bold", }}>
+                        <img className={"Icon"} src={"https://cdn.dribbble.com/userupload/2582878/file/original-46062a272986850aa42a84b6d9ab17b0.png?compress=1&resize=450x338&vertical=top"}></img>
+                        <Link  to="/mint" activeStyle={{ fontWeight: "bold", }}>
                             Metaverse
                         </Link>
                         

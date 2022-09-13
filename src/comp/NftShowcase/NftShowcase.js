@@ -20,7 +20,7 @@ const NftData = [
 
 export default function NftShowCase() {
     return (
-        <div className="Containershowcase">
+        <div className="Containershowcase" id="about">
             <div className="CardContainercase">
                 {NftData.map((nft) => (
                     <div className="Cardcase">
@@ -29,7 +29,7 @@ export default function NftShowCase() {
                     </div>
                 ))}
             </div>
-            <div className="MainQnaContainer">
+            <div className="MainQnaContainer" >
                 <Qna></Qna>
             </div>
         </div>

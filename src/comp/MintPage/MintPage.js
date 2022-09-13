@@ -48,7 +48,16 @@ const Card = styled(Paper)`
 
     
 `;
+const Timer = styled.h1`
 
+color:white;
+
+`
+const Timer1= styled.h3`
+
+color:white;
+
+`
 
 
 
@@ -63,24 +72,33 @@ const Mint = () => {
         return (
             <div>
                 <Card elevation={1}>
-                    <h1>{days}</h1>
+                    <Timer>{days}</Timer>
+                    <Timer1>
                     <br />
-                    Days
+                        Days
+                    </Timer1>
                 </Card>
                 <Card elevation={1}>
-                    <h1>{hours}</h1>
+                    <Timer>{hours}</Timer>
                     <br />
-                    Hours
+                    <Timer1>
+                            Hours
+                        </Timer1>
                 </Card>
                 <Card elevation={1}>
-                    <h1>{minutes}</h1>
+                    <Timer>{minutes}</Timer>
                     <br />
-                    Mins
+                    <Timer1>
+                        Mins
+                    </Timer1>
+                    
                 </Card>
                 <Card elevation={1}>
-                    <h1>{seconds}</h1>
-                    <br />
-                    Secs
+                    <Timer>{seconds}</Timer>
+                            <br />
+                            <Timer1>
+                                Secs
+                            </Timer1>
                 </Card>
             </div>
         );
@@ -121,7 +139,7 @@ const Mint = () => {
                 
                 
 
-                <div className="featuredLaunch_name">MetaKul NFT Mint</div>
+                <div className="featuredLaunch_name HeadingText">MetaKul NFT Mint</div>
                 <img
                     src="https://media.discordapp.net/attachments/936604605767360563/942682678971498566/preview.gif"
                     alt="NFT"
@@ -146,9 +164,9 @@ const Mint = () => {
 
             </div>
            
-                    <div className="featuredlaunch_leftCol">
+            <div className="featuredlaunch_leftCol">
                        
-                        <div className="featuredlaunch_clipboard">
+                <div className="featuredlaunch_clipboard">
                             <div className="featuredlaunch_box">
                                 <span>EARLY BIRD SUPPLY</span>
                                 <div className="featuredlaunch_quantity">400</div>
@@ -158,29 +176,19 @@ const Mint = () => {
                                 <div className="featuredlaunch_quantity">Free</div>
                             </div>
                         </div>
-                <p style={{ paddingRight: "12px", justifyContent: "center", color: "white"}}>
-                            METACOPS have the power to control corrupt projects on the solana
-                            blockchain. <br />
-                           
-                        </p>
-
-                      
-
-                        
-                        
-
-                        <h2
-                    style={{  margin: "auto", marginTop: "-10px", color: "white"}}
-                        >
-                    <h2> Join the gang now to get whitelist and earn $KULL👇🏻</h2>
-                        </h2>
-
+               
+                <h2 style={{  padding: "15px", marginTop: "-10px", color: "white"}}>
+                    Join  now to get whitelist and earn $KULL👇🏻</h2>
+                <div className="featuredlaunch_clipboard">
+                    <JoinGang></JoinGang>
+                </div>
             </div>
+           
 
-            <JoinGang></JoinGang>
+            
            
                     
-                </div>
+        </div>
             
             
         

@@ -248,8 +248,21 @@
         z-index: 0;
         left: 40%;
     }
-    .HeroTextContainer{
-        margin-bottom:40px
+
+    .HeroTextContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        flex-direction: column;
     }
 }
 
+
+.HeroTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    flex-direction: column;
+}

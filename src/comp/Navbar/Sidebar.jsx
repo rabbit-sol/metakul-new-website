@@ -22,19 +22,33 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
 
             <UlStyle className="flexNullCenter flexColumn">
                 <li className="semiBold font20 pointer">
-                    <Link
+                    <a
                         onClick={() => toggleSidebar(!sidebarOpen)}
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        to="/"
+                        href="/"
                         spy={true}
                         smooth={true}
                         offset={-60}
                     >
                         Home
-                    </Link>
+                    </a>
 
+                </li>
+                <li className="semiBold font20 pointer">
+                    <a
+                        onClick={() => toggleSidebar(!sidebarOpen)}
+                        activeClass="active"
+                        className="whiteColor"
+                        style={{ padding: "10px 15px" }}
+                        href="#about"
+                        spy={true}
+                        smooth={true}
+                        offset={-60}
+                    >
+                        About
+                    </a>
                 </li>
                 
                 <li className="semiBold font20 pointer">
@@ -65,20 +79,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
                         Team
                     </a>
                 </li>
-                <li className="semiBold font20 pointer">
-                    <Link
-                        onClick={() => toggleSidebar(!sidebarOpen)}
-                        activeClass="active"
-                        className="whiteColor"
-                        style={{ padding: "10px 15px" }}
-                        to="blog"
-                        spy={true}
-                        smooth={true}
-                        offset={-60}
-                    >
-                        Blog
-                    </Link>
-                </li>
+            
             
                 <li className="semiBold font20 pointer">
                     <a
