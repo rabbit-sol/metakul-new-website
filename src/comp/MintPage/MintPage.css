@@ -1,12 +1,12 @@
 .featuredlaunch_container {
     padding: 50px;
-    background-color: #1c1326;
-    display: flex;
+    background-color: black;
+    background: radial-gradient( at top left, rgba(9, 8, 68, 1), transparent 1300px ), radial-gradient(at top right, rgb(36 110 119), transparent 1500px), radial-gradient(at center left, rgba(33, 29, 43, 1), transparent 1300px), radial-gradient(at center right, rgba(9, 8, 68, 1), transparent 1800px), radial-gradient(at bottom right, rgba(97, 120, 104, 1), transparent 400px), radial-gradient(at bottom left, rgba(9, 8, 68, 1), transparent 2000px)
+    ;display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    
-    padding-top:200px
+    padding-top: 130px
 }
 
 .featuredlaunch_leftCol {
@@ -57,9 +57,10 @@
 }
 
 .featuredLaunch_name {
-    font-size: 58px;
+    font-size: 48px;
     line-height: 120%;
     /* padding-right: 250px; */
+    color:white;
 }
 
 .featuredlaunch_clipboard {
@@ -97,6 +98,15 @@
     .featured__launch__button {
         width: auto !important;
     }
+    .featuredlaunch_container {
+        padding: 50px;
+        background-color: black;
+         display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 130px
+    }
 }
 
 .featured_launch_amount_box {
@@ -118,4 +128,11 @@
     border-radius: 8px;
     font-weight: 700;
     min-width: 10rem;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .featuredlaunch_container {
+        background: radial-gradient( at bottom left, rgb(13 14 100 / 61%), transparent 1300px ), radial-gradient(at bottom right, rgb(36 110 119), transparent 1500px), radial-gradient(at center left, rgba(33, 29, 43, 1), transparent 1300px), radial-gradient(at center right, rgb(206 206 206), transparent 1800px), radial-gradient(at top right, rgba(97, 120, 104, 1), transparent 400px), radial-gradient(at top left, rgb(225 225 230), transparent 2000px);
+    }
 }

@@ -51,16 +51,13 @@ export default function Footer() {
                 <div className={"MetakulIconContainer"} id="contact">
                     <MetaKulHeading1>Follow us on</MetaKulHeading1>
                     <div className={"MetakulIcon"}>
-                        <div className={"FlexRow"} between>
+                            <div className={"FlexRow"} between>
+                                <img className={"IconSocial "} src={Instagram}></img>
                                 <img className={"IconSocial "} src={Telegram}></img>
                                 <img className={"IconSocial "} src={Twitter}></img>
-                                <img className={"IconSocial "} src={Youtube}></img>
+                                
                         </div>
-                        <div className={"FlexRow"} between>
-                                <img className={"IconSocial "} src={Facebook}></img>
-                                <img className={"IconSocial "} src={Instagram}></img>
-                                <img className={"IconSocial "} src={Tiktok}></img>
-                        </div>
+                
                     </div>
                 </div>
                

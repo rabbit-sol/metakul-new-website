@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 // Assets
 import CloseIcon from "../../assets/svg/CloseIcon";
 import LogoIcon from "../../assets/svg/Logo";
@@ -27,41 +27,43 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        to="home"
+                        to="/"
                         spy={true}
                         smooth={true}
                         offset={-60}
                     >
                         Home
                     </Link>
+
                 </li>
+                
                 <li className="semiBold font20 pointer">
-                    <Link
+                    <a
                         onClick={() => toggleSidebar(!sidebarOpen)}
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        to="services"
+                        href="#roadmap"
                         spy={true}
                         smooth={true}
                         offset={-60}
                     >
-                        Services
-                    </Link>
+                        Roadmap
+                    </a>
                 </li>
                 <li className="semiBold font20 pointer">
-                    <Link
+                    <a
                         onClick={() => toggleSidebar(!sidebarOpen)}
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        to="projects"
+                        href="#kul-team"
                         spy={true}
                         smooth={true}
                         offset={-60}
                     >
-                        Projects
-                    </Link>
+                        Team
+                    </a>
                 </li>
                 <li className="semiBold font20 pointer">
                     <Link
@@ -77,33 +79,20 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
                         Blog
                     </Link>
                 </li>
+            
                 <li className="semiBold font20 pointer">
-                    <Link
+                    <a
                         onClick={() => toggleSidebar(!sidebarOpen)}
                         activeClass="active"
                         className="whiteColor"
                         style={{ padding: "10px 15px" }}
-                        to="pricing"
-                        spy={true}
-                        smooth={true}
-                        offset={-60}
-                    >
-                        Pricing
-                    </Link>
-                </li>
-                <li className="semiBold font20 pointer">
-                    <Link
-                        onClick={() => toggleSidebar(!sidebarOpen)}
-                        activeClass="active"
-                        className="whiteColor"
-                        style={{ padding: "10px 15px" }}
-                        to="contact"
+                        href="#contact"
                         spy={true}
                         smooth={true}
                         offset={-60}
                     >
                         Contact
-                    </Link>
+                    </a>
                 </li>
             </UlStyle>
             <UlStyle className="flexSpaceCenter">
@@ -113,8 +102,8 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
                     </a>
                 </li>
                 <li className="semiBold font20 pointer flexCenter">
-                    <a href="/" className="radius8 " style={{ padding: "10px 15px" }}>
-                        Get Started
+                    <a href="/" className="radius8 " style={{ padding: "10px 15px", background: "hsl(188deg 78% 15%)"}}>
+                        Connect Wallet
                     </a>
                 </li>
             </UlStyle>

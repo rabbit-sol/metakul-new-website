@@ -3,7 +3,7 @@ import { FC, useEffect, useState } from "react";
 import styled from "styled-components";
 import Countdown from "react-countdown";
 import { Snackbar, Paper, LinearProgress, Chip } from "@material-ui/core";
-
+import JoinGang from "../../comp/joinGang/joinGang";
 
 import "./MintPage.css";
 
@@ -42,8 +42,11 @@ const Card = styled(Paper)`
     display: inline-block;
     background-color: var(--card-background-lighter-color) !important;
     margin: auto;
-    padding: 12px;
-    padding-bottom: 4px;
+    padding: 10px;
+    margin-left:5px;
+
+
+    
 `;
 
 
@@ -55,7 +58,7 @@ const Mint = () => {
 
 
     const currentDate = new Date(new Date().toUTCString()).getTime();
-    const launchDate = new Date(Date.UTC(2022, 1, 17, 14, 55, 0, 0)).getTime();
+    const launchDate = new Date(Date.UTC(2023, 1, 17, 14, 55, 0, 0)).getTime();
     const renderCounter = ({ days, hours, minutes, seconds }: any) => {
         return (
             <div>
@@ -112,32 +115,39 @@ const Mint = () => {
     return(
     
         <div className="featuredlaunch_container">
+         
             <div className="featuredlaunch_rightCol">
+               
+                
+                
+
+                <div className="featuredLaunch_name">MetaKul NFT Mint</div>
                 <img
                     src="https://media.discordapp.net/attachments/936604605767360563/942682678971498566/preview.gif"
                     alt="NFT"
                     width="300px"
                 />
+                <MintButtonContainer>
 
-                            <p>Total Minted : 100</p>
-                <h3>
-                    TOTAL MINTED ON EARLY BIRD SALE
-                </h3>
+                    <div style={{ marginTop: "10px" }}>
 
+                        <CountDowns
+                            date={currentDate + (launchDate - currentDate)}
+                            onMount={({ completed }) => completed && setIsActive(true)}
+                            onComplete={() => {
+                                setIsActive(true);
+                            }}
+                            renderer={renderCounter}
+                        />
+                    </div>
+
+
+                </MintButtonContainer>
 
             </div>
+           
                     <div className="featuredlaunch_leftCol">
-                        <div style={{ display: "flex" }}>
-                            <div className="featuredlaunch_tag1">METACOPS Supply:<br />2911 </div>
-                            <div className="featuredlaunch_tag " style={{ marginLeft: "10px" }}>
-                                {" "}
-                              
-                                        <button>Connect Wallet</button>
-                                
-                            </div>
-                        </div>
-                        <div className="featuredLaunch_name">MetaCops911 Mint</div>
-
+                       
                         <div className="featuredlaunch_clipboard">
                             <div className="featuredlaunch_box">
                                 <span>EARLY BIRD SUPPLY</span>
@@ -148,39 +158,27 @@ const Mint = () => {
                                 <div className="featuredlaunch_quantity">Free</div>
                             </div>
                         </div>
-                        <p style={{ paddingRight: "12px", justifyContent: "center" }}>
+                <p style={{ paddingRight: "12px", justifyContent: "center", color: "white"}}>
                             METACOPS have the power to control corrupt projects on the solana
                             blockchain. <br />
-                            Mint a Metacop and start earning $MCOP.👇🏻
+                           
                         </p>
 
                       
 
                         
-                        <MintButtonContainer>
-                            
-                                <div style={{ marginLeft: "30%", marginTop: "-30px" }}>
-
-                                    <CountDowns
-                                        date={currentDate + (launchDate - currentDate)}
-                                        onMount={({ completed }) => completed && setIsActive(true)}
-                                        onComplete={() => {
-                                            setIsActive(true);
-                                        }}
-                                        renderer={renderCounter}
-                                    />
-                                </div>
-                           
-                            
-                        </MintButtonContainer>
+                        
 
                         <h2
-                            style={{ marginBottom: "15px", margin: "auto", marginTop: "-10px" }}
+                    style={{  margin: "auto", marginTop: "-10px", color: "white"}}
                         >
-                            <h2>Early Bird Sale: 0% Sold out</h2>
+                    <h2> Join the gang now to get whitelist and earn $KULL👇🏻</h2>
                         </h2>
-                    </div>
 
+            </div>
+
+            <JoinGang></JoinGang>
+           
                     
                 </div>
             

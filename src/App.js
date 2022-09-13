@@ -6,7 +6,7 @@ import NavBar from "./comp/Navbar/navbar"
 import { Helmet } from "react-helmet";
 
 import Home from "./pages/home"
-import Mint from "./pages/MintPage/MintPage"
+import Mint from "./pages/mint"
 import NewsLetter from "./comp/newsLetter/newsLetter";
 import Footer from "./comp/footer/footer"
 

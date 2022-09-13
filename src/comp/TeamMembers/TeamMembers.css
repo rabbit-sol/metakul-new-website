@@ -19,7 +19,7 @@
 
 
 .Container {
-    padding-bottom:50px;
+    
     padding-top: 50px;
     background-color: #000;
     display: flex;
@@ -38,6 +38,7 @@
     flex-direction: column;
     border-radius: 20px;
     margin-left: 50px;
+    margin-bottom:50px
 }
 .MarginContainer{
     margin:auto

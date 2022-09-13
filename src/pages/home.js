@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div>
             <HeroSection/>
-            <div className={"Container"}>
+            <div className={"Container"} style={{ paddingTop:"50px"}}>
             <JoinGang></JoinGang>
             </div>
             <NftShowcase></NftShowcase>

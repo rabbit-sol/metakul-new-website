@@ -9,7 +9,7 @@ import LinedIn from "../../assets/icon/linkedIn.png";
 
 const TeamMemberData = [
     { img: Ak, name: "Shubham Kunwar", instaGram: "", linkedIn: "", id: 1,role:"Blockchain developer" },
-    { img: Ak, name: "Narendra Rauthan", instaGram: "", linkedIn: "", id: 2, role: "" },
+    { img: Ak, name: "Narendra Rauthan", instaGram: "", linkedIn: "", id: 2, role: "UI/UX Designer" },
     { img: Ak, name: "Ankush Tamta", instaGram: "", linkedIn: "", id: 3, role: ""},
     
 ];

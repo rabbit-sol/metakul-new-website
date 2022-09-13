@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function JoinGang() {
     return (
-        <div style={{margin:"80px 20px 50px 20px"}}>
+        <div style={{margin:"20px auto 50px auto"}}>
             <div className="">
                 <div className="HeadingText"> Join The Metakul Gang</div>
             </div>

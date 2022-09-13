@@ -3,6 +3,7 @@
     height: 650px;
     width: 100%;
     margin: 0px;
+    padding-bottom: 50px;
     padding: 0px;
     background-color: black;
     background: radial-gradient( at bottom left, rgba(9, 8, 68, 1), transparent 1300px ), radial-gradient(at bottom right, rgb(36 110 119), transparent 1500px), radial-gradient(at center left, rgba(33, 29, 43, 1), transparent 1300px), radial-gradient(at center right, rgba(9, 8, 68, 1), transparent 1800px), radial-gradient(at top right, rgba(97, 120, 104, 1), transparent 400px), radial-gradient(at top left, rgba(9, 8, 68, 1), transparent 2000px);
@@ -45,6 +46,8 @@
     align-items: center;
     padding-top: 50px;
     flex-direction: column;
+
+    
 }
 
 .HeroTitle {
@@ -196,6 +199,57 @@
         padding: 0px;
         background-color: #000;
         
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    .NftContainer {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 66px;
+        line-height: 100px;
+        color: rgba(115, 224, 169, 0.08);
+        text-shadow: 0px 0px 177px rgba(115, 224, 169, 0.09);
+        position: absolute;
+        top: 9%;
+        z-index: 0;
+        left: 10%;
+    }
+
+    .BlockChainWrapper {
+        display:none;
+    }
+    .MetakulWarapper {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 121px;
+        color: rgba(115, 224, 169, 0.08);
+        text-shadow: 0px 0px 177px rgba(115, 224, 169, 0.09);
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 11%;
+        z-index: 0;
+        left: 55%;
+    }
+    .MetaVerse {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 121px;
+        color: rgba(115, 224, 169, 0.08);
+        text-shadow: 0px 0px 177px rgba(115, 224, 169, 0.09);
+        position: absolute;
+        top: 48%;
+        z-index: 0;
+        left: 40%;
+    }
+    .HeroTextContainer{
+        margin-bottom:40px
     }
 }
 
