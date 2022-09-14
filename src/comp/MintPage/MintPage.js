@@ -141,7 +141,7 @@ const Mint = () => {
 
                 <div className="featuredLaunch_name HeadingText">MetaKul NFT Mint</div>
                 <img
-                    src="https://media.discordapp.net/attachments/936604605767360563/942682678971498566/preview.gif"
+                    src="https://media.discordapp.net/attachments/954642077340278825/1019585636375732285/6tckjj.gif"
                     alt="NFT"
                     width="300px"
                 />
