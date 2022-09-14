@@ -54,8 +54,8 @@ export default function NftShowCase() {
             </div>
             <div className="MainQnaContainer" >
                 <Qna></Qna>
-                <iframe className={"mainVideo"} src="https://www.youtube.com/embed/uXWycyeTeCs"  ></iframe>
-            </div>
+                <iframe className={"mainVideo"} src="https://www.instagram.com/reel/CgDvAEpKa4Z/?utm_source=ig_embed&amp;utm_campaign=loading"  ></iframe>
+ </div>
         </div>
     );
 }
