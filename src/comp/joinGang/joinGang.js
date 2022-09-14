@@ -15,9 +15,9 @@ export default function JoinGang() {
                     <div className="Button" style={{marginRight:"20px"}}>
 
                         <img className={"Icon"} src={Discord}></img>
-                        <Link style={{ color: "white" }} to="https://discord.gg/sRk3tZ9z3A" activeStyle={{ fontWeight: "bold", }}>
+                        <a style={{ color: "white" }} href="https://discord.gg/sRk3tZ9z3A" activeStyle={{ fontWeight: "bold", }}>
                             Discord
-                        </Link>
+                        </a>
                     </div>
                     <div className="Button">
                         <img className={"Icon"} src={"https://cdn.dribbble.com/userupload/2582878/file/original-46062a272986850aa42a84b6d9ab17b0.png?compress=1&resize=450x338&vertical=top"}></img>
