@@ -177,8 +177,8 @@ const Mint = () => {
                             </div>
                         </div>
                
-                <h2 style={{  padding: "15px", marginTop: "-10px", color: "white"}}>
-                    Join  now to get whitelist and earn $KULL👇🏻</h2>
+                <h3 style={{  padding: "15px", marginTop: "-10px", color: "white"}}>
+                    Join  now to get whitelist and earn $KULL👇🏻</h3>
                 <div className="featuredlaunch_clipboard">
                     <JoinGang></JoinGang>
                 </div>
