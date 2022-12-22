@@ -20,7 +20,6 @@ export default function JoinGang() {
                         </a>
                     </div>
                     <div className="Button">
-                        <img className={"Icon"} src={"https://cdn.dribbble.com/userupload/2582878/file/original-46062a272986850aa42a84b6d9ab17b0.png?compress=1&resize=450x338&vertical=top"}></img>
                         <Link  to="/mint" activeStyle={{ fontWeight: "bold", }}>
                             Metaverse
                         </Link>
